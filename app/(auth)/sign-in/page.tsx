@@ -1,8 +1,16 @@
-import React from 'react'
+"use client";
+
+import Form from '@/components/forms/Form';
+import { SignInSchema } from '@/lib/validations';
 
 const SignIn = () => {
     return (
-        <div>SignIn</div>
+        <Form
+            formType="SIGN_IN"
+            schema={SignInSchema}
+            defaultValues={{ email: "", password: "" }}
+            onSubmit={(data) => Promise.resolve({ success: true, data })}
+        />
     )
 }
 

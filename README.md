@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stunning Lamp
 
-## Getting Started
+A modern authentication starter built with **Next.js**, **shadcn/ui**, and **Auth.js**.
+This project is a practice implementation focused on setting up secure authentication flows with a clean and responsive UI.
 
-First, run the development server:
+🌐 Live Demo: [Stunning Lamp Live Site](https://stunninglamp.netlify.app/?utm_source=chatgpt.com)
+
+---
+
+## ✨ Features
+
+* 🔐 Authentication with Auth.js
+* ⚡ Next.js App Router
+* 🎨 Beautiful UI using shadcn/ui
+* 🌙 Responsive modern design
+* 🔑 Secure session handling
+* 📱 Mobile-friendly layout
+* 🚀 Deployed on Netlify
+
+---
+
+## 🛠️ Tech Stack
+
+* Next.js
+* Auth.js
+* shadcn/ui
+* Tailwind CSS
+* TypeScript
+
+---
+
+# 📸 Preview
+
+Visit the live project here:
+
+👉 [https://stunninglamp.netlify.app/](https://stunninglamp.netlify.app/?utm_source=chatgpt.com)
+
+---
+
+## 📂 Project Structure
+
+```bash
+stunning-lamp/
+├── app/
+├── components/
+├── lib/
+├── public/
+├── styles/
+├── auth.ts
+├── middleware.ts
+├── next.config.js
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/stunning-lamp.git
+cd stunning-lamp
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create a `.env.local` file:
+
+```env
+AUTH_SECRET=your_secret
+AUTH_GITHUB_ID=your_github_client_id
+AUTH_GITHUB_SECRET=your_github_secret
+```
+
+---
+
+## ▶️ Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Authentication Setup
 
-To learn more about Next.js, take a look at the following resources:
+This project uses Auth.js for authentication handling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Supported provider example:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* GitHub OAuth
 
-## Deploy on Vercel
+You can easily add more providers from the official docs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 UI Components
+
+Built with reusable and accessible components from shadcn/ui.
+
+Example components used:
+
+* Button
+* Card
+* Input
+* Dialog
+* Dropdown Menu
+
+---
+
+## 🚢 Deployment
+
+This project is deployed on:
+
+* Netlify
+
+Live URL:
+
+👉 [Stunning Lamp Deployment](https://stunninglamp.netlify.app/?utm_source=chatgpt.com)
+
+---
+
+## 📚 Learning Goals
+
+This project was created to practice:
+
+* Authentication flow setup
+* Session management
+* Next.js App Router
+* Middleware protection
+* Modern UI development
+* Deployment workflow
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+Feel free to fork the project and open a pull request.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Ashfaq
+
+Made with ❤️ while learning modern authentication in Next.js.

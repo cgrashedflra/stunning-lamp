@@ -16,7 +16,22 @@
   }
 }
 
+.bg-auth {
+  background-image: var(--background-image-auth);
+  background-size: cover;
+  background-position: center;
+}
+
+.parchment-bg {
+  background-image: var(--background-texture-parchment);
+  background-size: cover;
+  background-position: center;
+}
+
 @theme inline {
+
+  --background-image-auth: url("/images/Fantasy-authentication-BG.jpg");
+  --background-texture-parchment : url("/images/Gemini_Generated_parchment-page.png");
 
   --font-heading: var(--font-sans);
 
@@ -229,6 +244,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
 
   --sidebar-ring: oklch(0.556 0 0);
+
+  
 }
 
 @layer base {

@@ -1,27 +1,11 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 export default function ProfilePage() {
     const { data: session, status } = useSession();
     const router = useRouter();
-
-    useEffect(() => {
-        if (status === "unauthenticated") {
-            // optional: redirect guests to home
-            router.push("/");
-        }
-    }, [status, router]);
-
-    if (status === "loading") {
-        return (
-            <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 to-slate-700 text-white">
-                Loading...
-            </div>
-        );
-    }
 
     const user = session?.user;
 
@@ -83,7 +67,7 @@ export default function ProfilePage() {
                         </button>
                     ) : (
                         <button
-                            onClick={() => signIn()}
+                            onClick={() => router.push("/sign-in")}
                             className="w-full py-3 rounded-2xl bg-blue-500/90 hover:bg-blue-500 text-white font-medium shadow-lg active:scale-[0.98] transition"
                         >
                             Sign In

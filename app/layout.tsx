@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 import { SessionProvider, useSession } from "next-auth/react";
 import { auth } from "@/auth";
+import { cn } from "@/lib/utils";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const medievalSharp = localFont({
+  src: "./fonts/MedievalSharp-Regular-VF.ttf",
+  variable: "--font-medieval-sharp",
+})
 
 export const metadata: Metadata = {
   title: "Stunning Lamp",
@@ -28,7 +25,7 @@ const RootLayout = async ({
   return (
     < html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`
+      className={cn("antialiased", medievalSharp.variable)
       }
     >
       <SessionProvider session={session}>

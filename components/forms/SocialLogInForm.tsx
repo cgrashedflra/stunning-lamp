@@ -7,12 +7,12 @@ import { signIn } from 'next-auth/react';
 
 const SocialLogInForm = () => {
     const buttonClass =
-        "background-dark400_light900 body-medium text-dark200_light800 min-h-12 flex-1 rounded-2 px-4 py-3.5";
+        "w-full mt-4 p-6 rounded-2xl bg-lime/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md shadow-inner active:scale-[0.98] transition";
 
     return (
-        <div>
+        <div className='flex justify-center shadow-xl '>
             <Button className={buttonClass} onClick={() => signIn("google")}>
-                <Image src="/google.svg" alt="Google Logo" width={20} height={20} className="mr-2.5 object-contain" />
+                <Image src="/google.svg" alt="Google Logo" width={30} height={30} className="mr-2.5 object-contain" />
                 <span>Log in with Google</span>
             </Button>
         </div>
